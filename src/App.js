@@ -2,8 +2,8 @@ import React from 'react';
 import Category from './Category.js';
 import './App.css';
 import { Slide } from 'react-slideshow-image';
-import Surprice from './Surprice';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+// import { Router } from 'react-router-dom';
 
 
 // function App() {
@@ -46,7 +46,6 @@ const properties = {
 const App = () => {
   return (
     <div className="slide-container">
-      {/* <div className="inside-slide"> */}
       <Slide {...properties}>
         <div className="each-slide">
           <div style={{ 'backgroundImage': `url(${slideImages[0]})`, 'backgroundSize': `100%`, 'height': `100%` }}>
@@ -61,29 +60,7 @@ const App = () => {
           </div>
         </div>
       </Slide>
-      {/* </div> */}
-      <div> <Category /></div>
-      <div>
-        <Router>
-          <Switch>
-            <Route path="/surprice">
-              <Surprice />
-            </Route>
-            <Route path="/shopping">
-              <Surprice />
-            </Route>
-            <Route path="/footwear">
-              <Surprice />
-            </Route>
-            <Route path="/eating">
-              <Surprice />
-            </Route>
-            <Route path="/travel">
-              <Surprice />
-            </Route>
-          </Switch>
-        </Router>
-      </div>
+      <div><Category /></div>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Surprice() {
+function Shopping() {
   return (
     <div>
       <h2>shopping</h2>
@@ -8,4 +8,4 @@ function Surprice() {
   );
 }
 
-export default Surprice;
+export default Shopping;
